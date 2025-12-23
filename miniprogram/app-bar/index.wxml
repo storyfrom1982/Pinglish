@@ -1,0 +1,49 @@
+<!-- components/app-bar/index.wxml -->
+<vertical-drag-gesture-handler worklet:ongesture="handleVerticalDrag">
+	<view class="expand-container">
+		<view class="nav-bar column">
+			<view style="height: {{statusBarHeight}}px;" />
+			<view style="flex: 1;" class="column-main-center">
+				<image
+				 class="icon--back"
+				 mode="aspectFill"
+				 src="/assets/arrow-down.png"
+				 bind:tap="close"
+				/>
+			</view>
+		</view>
+
+		<view class="cover-area" style="height: {{maxCoverSize}}px;">
+			<view class="row " bind:tap="expand">
+				<image class="cover" mode="aspectFill" src="{{musicCover}}" />
+				<view class="title-wrap row-between">
+					<view class="title column">
+						<text>Someone like you</text>
+						<text>Haha</text>
+					</view>
+					<view class="row">
+						<image class="icon" style="margin-right: 24px;" src="/assets/play.png" />
+						<image class="icon" src="/assets/next.png" />
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="row-between">
+			<text>QQ 音乐</text>
+			<text>11 人在听</text>
+		</view>
+
+		<view class="music-title column" style="margin-top: 50px;">
+			<text wx:if="{{currentPage == 0}}" >Someone like you (Wonderful)</text>
+			<text>Haha</text>
+		</view>
+
+		<view class="footer row-between" style="margin-top: 100px;">
+			<image class="icon" src="/assets/next.png" style="transform: rotate(180deg);" />
+			<image class="icon" src="/assets/play.png" />
+			<image class="icon" src="/assets/next.png" />
+		</view>
+	</view>
+
+</vertical-drag-gesture-handler>
+
