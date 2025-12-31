@@ -1,0 +1,6 @@
+/* pages/styles/index.wxss */
+
+.icon {
+  width: 100px;
+  aspect-ratio: 1/1;
+}

@@ -1,0 +1,111 @@
+<view class="page-{{theme}}">
+
+<navigation-bar
+ title="Examples"
+ back="{{true}}"
+ color="black"
+ background="#FFF"
+/>
+
+<scroll-view 
+  class="flex fill" 
+  style="padding: 20px; padding-bottom: 100px;"
+  scroll-y show-scrollbar="{{false}}">
+
+  <text>flex-x fill-x</text>
+  <view class="flex-x fill-x"
+        style="margin-bottom: 10px; border: 2px solid var(--weui-BLUE-80);">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-x fill-x end-m end-a</text>
+  <view class="flex-x fill-x end-m end-a" 
+        style="height: 60px; margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-x fill-x space-m end-a</text>
+  <view class="flex-x fill-x space-m end-a" 
+        style="height: 60px; margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-x fill-x space-m center-a</text>
+  <view class="flex-x fill-x space-m center-a" 
+        style="height: 60px; margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-y fill-x space-m</text>
+  <view class="flex-y fill-x space-m" 
+        style="margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-y fill-x center-m end-a</text>
+  <view class="flex-y fill-x center-m end-a" 
+        style="height: 120px; margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-y fill-x space-m end-a</text>
+  <view class="flex-y fill-x space-m end-a" 
+        style="height: 120px; margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-y fill-x space-m center-a</text>
+  <view class="flex-y fill-x space-m center-a" 
+        style="height: 120px; margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{3}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index%3]}};"></view>
+    </block>
+  </view>
+
+  <text>flex-xw space-m space-a</text>
+  <view class="flex-xw space-m space-a" 
+        style="width: 120px; height: 120px; aspect-ratio: 1/1; margin-bottom: 10px; border: 2px solid green;">
+    <block wx:for="{{9}}">
+      <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index]}};"></view>
+    </block>
+  </view>
+    
+  <view class="flex-x fill-x space-m">
+    <view class="flex-y fill-a">
+      <text>flex-yw</text>
+      <view class="flex-yw" 
+            style="width: 120px; height: 120px; aspect-ratio: 1/1; margin-bottom: 10px; border: 2px solid green;">
+        <block wx:for="{{9}}">
+          <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index]}};"></view>
+        </block>
+      </view>
+    </view>
+
+    <view class="flex-y fill-a">
+      <text>flex-xw end-m</text>
+      <view class="flex-xw end-m" 
+            style="width: 120px; height: 120px; aspect-ratio: 1/1; margin-bottom: 10px; border: 2px solid green;">
+        <block wx:for="{{9}}">
+          <view class="flex" style="margin: 2px; width: 30px; height: 30px; background: {{itemColor[index]}};"></view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+</scroll-view>
+
+</view>

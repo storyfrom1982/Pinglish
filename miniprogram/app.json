@@ -1,19 +1,26 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/demo/index",
+    "pages/demo/layout/layout",
+    "pages/demo/theme/theme",
     "pages/detail/index"
   ],
+
+  "darkmode": true,
+  "themeLocation": "theme.json",
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "@navTxtStyle",
     "navigationStyle": "custom"
   },
+
   "style": "v2",
   "renderer": "skyline",
   "appBar": {},
   "rendererOptions": {
     "skyline": {
-      "defaultDisplayBlock": true,
-      "defaultContentBox": true,
+      "defaultDisplayBlock": false,
+      "defaultContentBox": false,
       "disableABTest": true,
       "sdkVersionBegin": "3.0.0",
       "sdkVersionEnd": "15.255.255"

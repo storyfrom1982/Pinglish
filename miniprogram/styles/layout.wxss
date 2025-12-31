@@ -1,0 +1,165 @@
+.main-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  pointer-events: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.fill {
+  /* flex: 1; */
+  width: 100%;
+  height: 100%;
+}
+
+.fill-a {
+  width: auto;
+  height: auto;
+}
+
+.fill-x {
+  width: 100%;
+  height: auto;
+}
+
+.fill-y {
+  width: auto;
+  height: 100%;
+}
+
+.fill-xa {
+  width: auto;
+}
+
+.fill-ya {
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-x {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-xw {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flex-yw {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.flex-xr {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-yr {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.center-m {
+  justify-content: center;
+}
+
+.center-a {
+  align-items: center;
+}
+
+.end-m {
+  justify-content: flex-end;
+}
+
+.end-a {
+  align-items: flex-end;
+}
+
+.space-m {
+  justify-content: space-between;
+}
+
+.space-a {
+  align-content: space-between;
+}
+
+.frame-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.frame-column {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.center-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.fill-view {
+  width: 100%;
+  height: 100%;
+}
+
+.column-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-center {
+  justify-content: center;
+}
+
+.cross-center {
+  align-items: center;
+}

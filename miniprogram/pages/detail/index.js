@@ -1,4 +1,6 @@
 // pages/detail/index.js
+import pageBehavior from '../../behaviors/page.behaviors'
+
 const musicList = [
   {
     id: 0,
@@ -13,6 +15,7 @@ const musicList = [
 
 ]
 Page({
+  behaviors: [pageBehavior],
   data: {
     music: musicList[0],
     albumMusicList: [{
@@ -54,11 +57,6 @@ Page({
   },
 
   onLoad(query) {
-    if (typeof this.getAppBar === 'function' ) {
-      const appBarComp = this.getAppBar()
-      // appBarComp.setData({})
-      appBarComp.hide()
-    }
     const idx = query.idx
     if (idx) {
       this.setData({
@@ -68,11 +66,7 @@ Page({
   },
 
   onUnload() {
-    if (typeof this.getAppBar === 'function' ) {
-      const appBarComp = this.getAppBar()
-      // appBarComp.setData({})
-      appBarComp.show()
-    }
+
   },
 
   onReady() {

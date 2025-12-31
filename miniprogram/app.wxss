@@ -1,0 +1,17 @@
+@import "/styles/theme.wxss";
+@import "/styles/layout.wxss";
+
+
+.page-light {
+  width: 100vw;
+  height: 100vh;
+  color: var(--weui-FG);
+  background-color: var(--weui-BG);
+}
+
+.page-dark {
+  width: 100vw;
+  height: 100vh;
+  color: var(--weui-FG);
+  background-color: var(--weui-BG);
+}

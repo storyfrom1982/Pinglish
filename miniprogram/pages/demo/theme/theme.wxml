@@ -1,0 +1,19 @@
+<view class="page-{{theme}}">
+
+<navigation-bar
+ title="Theme"
+ back="{{true}}"
+ color="black"
+ background="#FFF"
+/>
+
+<scroll-view 
+  class="flex fill" 
+  style="padding: 20px; padding-bottom: 100px;"
+  scroll-y show-scrollbar="{{false}}">
+
+  <view class="flex-x fill-x" bind:tap="switchToTheme">切换主题</view>
+
+</scroll-view>
+
+</view>

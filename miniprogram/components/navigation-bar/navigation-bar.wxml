@@ -1,5 +1,5 @@
 <view class="weui-navigation-bar {{extClass}}">
-  <view class="weui-navigation-bar__inner {{ios ? 'ios' : 'android'}}" style="color: {{color}}; background: {{background}}; {{displayStyle}}; {{innerPaddingRight}}; {{safeAreaTop}};">
+  <view class="weui-navigation-bar__inner {{ios ? 'ios' : 'android'}}" style="background: {{background}}; {{displayStyle}}; {{innerPaddingRight}}; {{safeAreaTop}};">
 
     <!-- 左侧按钮 -->
     <view class='weui-navigation-bar__left' style="{{leftWidth}};">
@@ -15,7 +15,8 @@
               aria-role="button"
               aria-label="返回"
             >
-              <view class="weui-navigation-bar__button weui-navigation-bar__btn_goback"></view>
+              <!-- <view class="weui-navigation-bar__button weui-navigation-bar__btn_goback"></view> -->
+              <sr-icon class="fill" name="rollback" size="48rpx"></sr-icon>
             </view>
           </view>
         </block>

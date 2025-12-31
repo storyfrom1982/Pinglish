@@ -1,7 +1,9 @@
+import pageBehavior from '../../behaviors/page.behaviors'
 const app = getApp()
 
 Page({
   data: {
+    behaviors: [pageBehavior],
     musicList: [
       {
         id: 0,
@@ -24,7 +26,8 @@ Page({
   goDetail(e) {
     const idx = e.currentTarget.dataset.idx
     wx.navigateTo({
-      url: `../detail/index?idx=${idx}`,
+      // url: `../detail/index?idx=${idx}`,
+      url: `../demo/index?idx=${idx}`,
     })
   }
 })

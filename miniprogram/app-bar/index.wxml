@@ -1,9 +1,8 @@
-<!-- components/app-bar/index.wxml -->
 <vertical-drag-gesture-handler worklet:ongesture="handleVerticalDrag">
-	<view class="expand-container">
-		<view class="nav-bar column">
+	<view id="main-view" class="main-view expand-container">
+		<view class="nav-bar column-view">
 			<view style="height: {{statusBarHeight}}px;" />
-			<view style="flex: 1;" class="column-main-center">
+			<view style="flex: 1;" class="column-view main-center">
 				<image
 				 class="icon--back"
 				 mode="aspectFill"
@@ -14,14 +13,14 @@
 		</view>
 
 		<view class="cover-area" style="height: {{maxCoverSize}}px;">
-			<view class="row " bind:tap="expand">
+			<view class="row-view cross-center" bind:tap="expand">
 				<image class="cover" mode="aspectFill" src="{{musicCover}}" />
 				<view class="title-wrap row-between">
 					<view class="title column">
 						<text>Someone like you</text>
 						<text>Haha</text>
 					</view>
-					<view class="row">
+					<view class="row-view main-center">
 						<image class="icon" style="margin-right: 24px;" src="/assets/play.png" />
 						<image class="icon" src="/assets/next.png" />
 					</view>
@@ -33,7 +32,7 @@
 			<text>11 人在听</text>
 		</view>
 
-		<view class="music-title column" style="margin-top: 50px;">
+		<view class="music-title column-view" style="margin-top: 50px;">
 			<text wx:if="{{currentPage == 0}}" >Someone like you (Wonderful)</text>
 			<text>Haha</text>
 		</view>

@@ -1,0 +1,4 @@
+
+<view class="flex icon-{{name}}" style="width: {{size}}; height: {{size}};">
+  <view class="mask-view" style="background-color: {{color}};"/>
+</view>

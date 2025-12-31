@@ -57,7 +57,7 @@ Component({
         }
       })
 
-      this.applyAnimatedStyle('.expand-container', () => {
+      this.applyAnimatedStyle('#main-view', () => {
         'worklet'
         const t = progress.value
         const maxRadius = 30

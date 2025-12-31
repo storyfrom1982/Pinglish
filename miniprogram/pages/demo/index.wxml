@@ -1,0 +1,31 @@
+<view class="page-{{theme}}">
+
+<navigation-bar
+ title="Styles"
+ back="{{true}}"
+ color="black"
+/>
+
+<scroll-view 
+  class="flex fill" 
+  style="padding: 20px; padding-bottom: 100px;"
+  scroll-y show-scrollbar="{{false}}">
+
+  <view class="flex-x fill-x" bind:tap="navToLayout">布局</view>
+  <view class="flex-x fill-x" bind:tap="navToTheme">主题</view>
+
+  <view class="icon">
+    <sr-icon class="fill" color="blue"></sr-icon>
+  </view>
+
+  <sr-icon class="flex" size="240rpx" color="pink"></sr-icon>
+  <sr-icon class="flex" size="440rpx" name="message"></sr-icon>
+
+  <view style="width: 220rpx; aspect-ratio: 1/1;">
+    <sr-icon class="fill" name="message-f" color="red"></sr-icon>
+  </view>
+  
+  
+</scroll-view>
+
+</view>
