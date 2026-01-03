@@ -1,5 +1,3 @@
-<view class="page-{{theme}}">
-
 <navigation-bar
  title="Styles"
  back="{{true}}"
@@ -15,17 +13,15 @@
   <view class="flex-x fill-x" bind:tap="navToTheme">主题</view>
 
   <view class="icon">
-    <sr-icon class="fill" color="blue"></sr-icon>
+    <sr-svg class="fill" name="home" color="{{theme.primary}}"></sr-svg>
   </view>
 
-  <sr-icon class="flex" size="240rpx" color="pink"></sr-icon>
-  <sr-icon class="flex" size="440rpx" name="message"></sr-icon>
+  <sr-svg class="flex" size="240rpx" name="home-f" color="{{theme.active}}"></sr-svg>
+  <sr-svg class="flex" size="440rpx" name="message" color="{{theme.fg}}"></sr-svg>
 
   <view style="width: 220rpx; aspect-ratio: 1/1;">
-    <sr-icon class="fill" name="message-f" color="red"></sr-icon>
+    <sr-svg class="fill" name="home-f" color="red"></sr-svg>
   </view>
   
   
 </scroll-view>
-
-</view>

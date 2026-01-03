@@ -1,6 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/home/home",
+    "pages/explore/explore",
+    "pages/chat/chat",
+    "pages/mine/mine",
+    
     "pages/demo/index",
     "pages/demo/layout/layout",
     "pages/demo/theme/theme",
@@ -13,7 +18,23 @@
     "navigationBarTextStyle": "@navTxtStyle",
     "navigationStyle": "custom"
   },
-
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/explore/explore"
+      },
+      {
+        "pagePath": "pages/chat/chat"
+      },
+      {
+        "pagePath": "pages/mine/mine"
+      }
+    ]
+  },
   "style": "v2",
   "renderer": "skyline",
   "appBar": {},

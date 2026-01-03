@@ -1,13 +1,10 @@
 import themeManager from '../utils/theme-manager'
 
+const app = getApp()
+
 module.exports = Behavior({
   // Behavior名称
   name: 'pageBehavior',
-  
-  // 数据定义
-  data: {
-    theme: 'light',
-  },
   
   // 属性定义（可选）
   properties: {
@@ -17,14 +14,27 @@ module.exports = Behavior({
       value: false
     },
   },
-  
+
+  // 数据定义
+  data: {
+    theme: app.globalData.theme,
+  },
+
+  // observers: {
+  //   'color': function(newColor) {
+  //     console.log(newColor)
+  //   },
+  // },
+
   // 生命周期
   lifetimes: {
     created() {
       console.log('pageBehavior:created')
-      this.unsubscribe = themeManager.subscribe((theme) => {
-        this.setData({theme})
-      });
+      // this.onThemeChange = this.onThemeChange.bind(this);
+      this.themeListener = (theme) => {
+        this.setData({theme});
+      };
+      app.addThemeListener(this.themeListener);
     },
     
     attached() {
@@ -33,9 +43,7 @@ module.exports = Behavior({
     
     detached() {
       console.log('pageBehavior:detached')
-      if (this.unsubscribe) {
-        this.unsubscribe();
-      }
+      app.removeThemeListener(this.themeListener)
     }
   },
   
@@ -63,9 +71,7 @@ module.exports = Behavior({
   
   // 方法定义
   methods: {
-    toggleTheme() {
-      themeManager.toggleTheme()
-    }
+
   }
 
 })

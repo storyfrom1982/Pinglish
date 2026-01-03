@@ -16,11 +16,11 @@ Component({
     },
     background: {
       type: String,
-      value: ''
+      value: 'var(--ui-BG-BAR)'
     },
     color: {
       type: String,
-      value: ''
+      value: 'var(--ui-FG)'
     },
     back: {
       type: Boolean,

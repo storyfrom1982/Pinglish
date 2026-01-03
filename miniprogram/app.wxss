@@ -1,17 +1,14 @@
 @import "/styles/theme.wxss";
 @import "/styles/layout.wxss";
 
-
-.page-light {
+page,
+.page {
   width: 100vw;
   height: 100vh;
-  color: var(--weui-FG);
-  background-color: var(--weui-BG);
+  color: var(--ui-FG);
+  background-color: var(--ui-BG);
 }
 
-.page-dark {
-  width: 100vw;
-  height: 100vh;
-  color: var(--weui-FG);
-  background-color: var(--weui-BG);
+.page-bar {
+  background-color: var(--ui-BG-BAR);
 }

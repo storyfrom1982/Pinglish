@@ -1,5 +1,8 @@
 {
   "component": true,
   "styleIsolation": "apply-shared",
-  "usingComponents": {}
+  "usingComponents": {
+    "sr-icon": "/components/icon/icon",
+    "sr-svg": "/components/svg/svg"
+  }
 }
